@@ -11,6 +11,15 @@ const connect = function () {
     console.log("Successfully connected to game server");
     conn.write("Name: HPK");
   });
+  // conn.on("connect", () => {
+  //   conn.write("Move: up");
+  //   setTimeout(() => {
+  //     conn.write("Move: left");
+  //   },1000);
+  //   setInterval(() => {
+  //     conn.write("Move: up");
+  //   },1000);
+  // });
   conn.on("data", (data) => {
     console.log("Server says: ",data);   // event listener for data, logs reecived data
   });
