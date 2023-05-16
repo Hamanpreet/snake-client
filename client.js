@@ -8,8 +8,8 @@ const connect = function () {
     port: 50541 // PORT number here,
   });
   conn.on("connect", () => {              // when connection done, this callback executes
-    console.log("Connection established");
-    conn.write("hello fromm client");
+    console.log("Successfully connected to game server");
+    conn.write("Name: HPK");
   });
   conn.on("data", (data) => {
     console.log("Server says: ",data);   // event listener for data, logs reecived data
