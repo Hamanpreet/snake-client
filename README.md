@@ -18,7 +18,8 @@ Before you can run this client, you will need to be running the server side whic
 - While the server is running, Run the development snake client using the `node play.js` command.
 - Move the snake using W, A, S, D keys. 
 - Use key "X" to say, "U r slow"
-- Use key "Q" to say, "Here I go"
+- Use key "Q" to say, "Here I go
+- If you press wrong key, there will be message to remind you to press the right keys.
 - You can always see the count of how many players are playing at the moment on the terminal.
 
 ## Further Enhancements in progress
