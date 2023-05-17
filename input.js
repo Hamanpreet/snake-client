@@ -1,11 +1,9 @@
-//This variable declared to let stdin access both user input and connection obj.
+//This variable declared to let stdin access both user input and connection obj. in global scope
 let connection;
+const {EXIT,obj} = require("./constants");
+
 // setup interface to handle user input from stdin
-const {
-  EXIT,
-  obj
-} = require("./constants");
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   //read input by user
   const stdin = process.stdin;
@@ -22,30 +20,18 @@ const setupInput = function (conn) {
 };
 
 const handleUserInput = function(key) {
-   //console.log(obj);
   if (key === EXIT) {
     process.exit();
   }
-  //console.log("here is the key",key, obj[key]);
+  //if the key exists, print the respective message
   if (obj[key]) {
-
     const message = obj[key];
     connection.write(message);
+  } else {
+    //otherwise, ask user to press right keys(Added functionality)
+    connection.write("Say: Press right keys");
   }
-
-  // if (key === MOVE_UP_KEY) {
-  //   connection.write("Move: up");
-  // }
-  // if (key === MOVE_LEFT_KEY) {
-  //   connection.write("Move: left");
-  // }
-  // if (key === MOVE_DOWN_KEY) {
-  //   connection.write("Move: down");
-  // }
-  // if (key === MOVE_RIGHT_KEY) {
-  //   connection.write("Move: right");
-  // }
-
 };
 
+//exporting the setInput using new ES6 syntax
 module.exports = {setupInput};

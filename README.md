@@ -14,5 +14,17 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
-- Run the development snake client using the `node play.js` command.
+- Follow steps inside the snek server repo to run the server side, use npm run play to run it.
+- While the server is running, Run the development snake client using the `node play.js` command.
+- Move the snake using W, A, S, D keys. 
+- Use key "X" to say, "U r slow"
+- Use key "Q" to say, "Here I go"
+- You can always see the count of how many players are playing at the moment on the terminal.
+
+## Further Enhancements in progress
+
+- Score: When snake eats food, score should increase by one. It should be displayed on the screen.
+
+- Taking the name of users through Command Line Input.
+
+- Displaying the name of users playing and then removing it when a user has left.

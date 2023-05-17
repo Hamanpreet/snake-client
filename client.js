@@ -1,40 +1,36 @@
-// we are getting the "net module in this for TCP clients and servers in node.js"
+// We are getting the "net module in this for TCP clients and servers in node.js"
 const net = require("net");
 const { IP, PORT } = require("./constants");
-// establishes a connection with the game server
 
-const connect = function () {
+// establishes a connection with the game server
+const connect = function() {
+  let count = 0;
   const conn = net.createConnection({
-    host: IP,// IP address here,
-    port: PORT // PORT number here,
+    // Have moved IP and Port no. in the constants
+    host: IP,
+    port: PORT
   });
-  conn.on("connect", () => {              // when connection done, this callback executes
+
+  // when connection done, this callback executes
+  conn.on("connect", () => {
+    // displaying a count of how many players are playing(Stretch)
+    count++;
+    console.log("Players playing:",count);
     console.log("Successfully connected to game server");
     conn.write("Name: HPK");
-    setTimeout(() => {
-      conn.write("Say: Come");
-    },1000);
-    
   });
-  // conn.on("connect", () => {
-  //   conn.write("Move: up");
-  //   setTimeout(() => {
-  //     conn.write("Move: left");
-  //   },1000);
-  //   setInterval(() => {
-  //     conn.write("Move: up");
-  //   },1000);
-  // });
+
+  // event listener for data, logs received data
   conn.on("data", (data) => {
-    console.log("Server says: ",data);   // event listener for data, logs reecived data
+    console.log("Server says: ",data);
   });
 
-  // interpret incoming data as text
-  conn.setEncoding("utf8");            //make it human readable
-
+  // interpret incoming data as text, make it human readable
+  conn.setEncoding("utf8");
   return conn;
 };
 
+//exporting the connect function to be used by play.js
 module.exports = {connect};
 
 // or we can do this
