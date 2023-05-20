@@ -4,7 +4,6 @@ const { IP, PORT } = require("./constants");
 
 // establishes a connection with the game server
 const connect = function() {
-  let count = 0;
   const conn = net.createConnection({
     // Have moved IP and Port no. in the constants
     host: IP,
@@ -13,8 +12,6 @@ const connect = function() {
 
   // when connection done, this callback executes
   conn.on("connect", () => {
-    // displaying a count of how many players are playing(Stretch)
-    count++;
     console.log("Players playing:",count);
     console.log("Successfully connected to game server");
     conn.write("Name: HPK");

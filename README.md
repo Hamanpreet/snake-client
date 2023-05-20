@@ -9,7 +9,7 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 !["Reminding user to press right keys"](./docs/snakeKeys.png)
-!["Canned Message"](snakeMsg.png)
+!["Canned Message"](./docs/snakeMsg.png)
 
 
 ## Getting Started
