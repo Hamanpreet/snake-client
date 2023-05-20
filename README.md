@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![Reminding user to press right keys](./snakeKeys.png)
-![Message](./snakeMsg.png)
+!["Reminding user to press right keys"](./snakeKeys.png)
+!["Message"](./snakeMsg.png)
 
 
 ## Getting Started
@@ -20,6 +20,7 @@ Before you can run this client, you will need to be running the server side whic
 - Use key "X" to say, "U r slow"
 - Use key "Q" to say, "Here I go
 - Don't you worry, if you press wrong key, there will be message to remind you to press the right keys.
+- To exit the game, press Ctrl + C.
 
 ## Further Enhancements in progress
 
