@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![Reminding user to press right keys](snakeKeys.png)
-![Message](snakeMsg.png)
+![Reminding user to press right keys](./snakeKeys.png)
+![Message](./snakeMsg.png)
 
 
 ## Getting Started
