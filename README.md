@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![Final Output](C:\Users\User\OneDrive\Pictures\Screenshots\snakeGame.jpg)
-!["screenshot description"](#)
+![Reminding user to press right keys](snakeKeys.png)
+![Message](snakeMsg.png)
 
 
 ## Getting Started
@@ -19,13 +19,15 @@ Before you can run this client, you will need to be running the server side whic
 - Move the snake using W, A, S, D keys. 
 - Use key "X" to say, "U r slow"
 - Use key "Q" to say, "Here I go
-- If you press wrong key, there will be message to remind you to press the right keys.
-- You can always see the count of how many players are playing at the moment on the terminal.
+- Don't you worry, if you press wrong key, there will be message to remind you to press the right keys.
 
 ## Further Enhancements in progress
 
 - Score: When snake eats food, score should increase by one. It should be displayed on the screen.
 
 - Taking the name of users through Command Line Input.
+
+- You can always see the count of how many players are playing at the moment on the terminal.
+
 
 - Displaying the name of users playing and then removing it when a user has left.
