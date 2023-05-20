@@ -10,7 +10,6 @@ const  MOVE_LEFT_KEY = '\u0061';
 const MSG_KEY = '\u0071';
 const SLOW_KEY = '\u0078';
 
-
 //keys need to be in brackets to treat them as keys
 const obj = {[MOVE_UP_KEY]: "Move: up",
   [MOVE_LEFT_KEY]: "Move: left",

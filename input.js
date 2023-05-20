@@ -33,5 +33,6 @@ const handleUserInput = function(key) {
   }
 };
 
+
 //exporting the setInput using new ES6 syntax
 module.exports = {setupInput};
